@@ -1,8 +1,24 @@
 aid: blue-apron
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/blue-apron.png
 name: Blue Apron
-description: 'Blue Apron is a company surfaced as a portfolio company of bessemer-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Blue Apron is a direct-to-consumer meal-kit and prepared-food delivery company that ships
+  chef-designed recipes with pre-portioned fresh ingredients on a weekly, no-commitment basis. Its
+  consumer-facing surface spans meal kits, assembly-and-bake meals, ready-to-eat prepared dishes, and
+  family-style options ordered and managed through blueapron.com and its mobile apps. Surfaced as a
+  portfolio company of bessemer-venture-partners, Blue Apron operates a consumer e-commerce and
+  subscription platform with no public developer program, API portal, or documented API surface at the
+  time of enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/blue-apron/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Meal Kits
+- Food Delivery
+- E-Commerce
+- Subscription
+- Groceries
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/blue-apron-domain-security.yml
 - type: Website
   url: https://www.blueapron.com/
+- type: Blog
+  url: https://blog.blueapron.com/
+- type: Support
+  url: https://blueapronsupport.zendesk.com/hc/en-us
+- type: TermsOfService
+  url: https://www.blueapron.com/pages/terms
+- type: PrivacyPolicy
+  url: https://www.blueapron.com/pages/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
